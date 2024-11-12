@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy seluruh kode Next.js
-COPY app .
+COPY . .
 
 # Build aplikasi Next.js
 RUN npm run build
